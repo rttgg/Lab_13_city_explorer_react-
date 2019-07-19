@@ -1,52 +1,106 @@
-.App {
-  text-align: center;
+body {
+  font-family: 'Josefin Sans', sans-serif;
+  background-color: #D9D9D9;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+header, form label, h3 {
+  font-family: 'Acme', sans-serif;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
 h1 {
-  text-align: center;
+  font-size: 5vw;
+  color: #4484CE;
 }
-p {
+
+h2 {
+  font-size: 2vw;
+}
+
+h3 {
+  margin-bottom: 0;
+}
+
+header p, main label {
+  font-size: 1.4vw;
+}
+
+button {
+  padding: 5px 15px;
+  background-color:#F19F4D;
+  border: 1px solid #4484CE;
+}
+
+img {
+  margin: auto;
+  display: block;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  line-height: 1.5em;
+  text-indent: 5px;
+}
+
+li {
+  border-bottom: 2px solid #555;
+}
+
+section * {
+  padding: 0 2px;
+}
+
+span {
+  font-weight: bold;
+}
+
+section > p {
+  text-align: center;
+  font-style: italic;
+  margin-top: 0.3em; 
+}
+/* Style the yelp images */
+div section:nth-child(2) img {
+  height: 75px;
+  padding-bottom: 3px;
+}
+
+/* Style the movie images */
+div section:nth-child(4) img {
+  height: 150px;
+}
+
+.column-container {
+  display: flex;
+}
+
+.column-container section {
+  display: inline-block;
+  width: 100%;
+  border-style: groove;
+  margin: 5px;
+  background-color: #FFF;
+}
+
+.query-placeholder, form, header, h3 {
   text-align: center;
 }
 
 form {
-  text-align: center;
+  margin: 10px auto;
 }
-img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
+
+.hide {
+  display: none;
 }
-section {
-  float: left;
+
+#input-search {
+  padding: 5px;
+  border: 1px solid #4484CE;
+}
+
+#map {
+  margin-top: 10px;
+  border: 2px solid #4484CE;
 }

@@ -2,10 +2,11 @@ import React, { Component, Fragment } from "react";
 
 import "../App.css";
 
+
+
 class Result extends Component {
   constructor(props){
     super(props);
-
     this.state = {};
   }
 
@@ -19,9 +20,6 @@ render() {
       <ul class="weather-results">
         <li>get it from api</li>
       </ul>
-   
-
-
       </section>
     </Fragment>
   );
